@@ -14,9 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist/'),
   },
   optimization: {
-    splitChunks: {
-      chunks: 'async',
-    },
+    splitChunks: {},
   },
   devServer: {
     contentBase: './dist/',
@@ -35,15 +33,7 @@ module.exports = {
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-            plugins: [
-              [
-                '@babel/transform-react-jsx',
-                { pragma: 'h', pragmaFrag: 'Fragment' },
-              ],
-            ],
-          },
+          options: {},
         },
       },
       {

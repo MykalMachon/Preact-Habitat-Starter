@@ -6,6 +6,7 @@
   "scripts": {
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open",
+    "test": "jest",
     "build": "webpack"
   },
   "keywords": [
@@ -17,7 +18,10 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/plugin-transform-runtime": "^7.10.4",
     "@babel/preset-env": "^7.9.5",
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/preact": "^2.0.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-lodash": "^3.3.4",
     "babel-preset-env": "^1.7.0",
@@ -26,6 +30,8 @@
     "eslint": "^7.1.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-react": "^7.20.0",
+    "jest": "^26.1.0",
+    "jest-webpack-resolver": "^0.3.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "source-map-explorer": "^2.4.2",
